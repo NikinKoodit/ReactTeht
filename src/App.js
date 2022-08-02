@@ -21,11 +21,11 @@ const App = () => {
 
   return (
     <div>
-      <Header course = {course}/>
-      <Content part = {parts[0].name} exercices={parts[0].exercises}/>
-      <Content part = {parts[1].name} exercices={parts[1].exercises}/>
-      <Content part = {parts[2].name} exercices={parts[2].exercises}/>
-      <Total exercicesAll = {parts[0].exercises + parts[1].exercises + parts[2].exercises} />
+      <Header course = {course.name}/>
+      <Content part = {course.parts[0].name} exercices={course.parts[0].exercises}/>
+      <Content part = {course.parts[1].name} exercices={course.parts[1].exercises}/>
+      <Content part = {course.parts[2].name} exercices={course.parts[2].exercises}/>
+      <Total exercicesAll = {course.parts[0].exercises + course.parts[1].exercises + course.parts[2].exercises} />
     </div>
   )
 }
