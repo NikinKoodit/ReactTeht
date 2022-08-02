@@ -1,3 +1,5 @@
+//tehtävä 1.1
+
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
@@ -13,8 +15,7 @@ const App = () => {
       <Content part = {part1} exercices= {exercises1}/>
       <Content part = {part2} exercices= {exercises2}/>
       <Content part = {part3} exercices= {exercises3}/>
-      
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+      <Total exercicesAll = {exercises1 + exercises2 + exercises3} />
     </div>
   )
 }
@@ -34,6 +35,15 @@ return(
   <p>
     {props.part} {props.exercices}
   </p>
+)
+}
+
+const Total = (props) => {
+return(
+<p>
+Number of exercises: {props.exercicesAll}
+</p>
+
 )
 
 }
